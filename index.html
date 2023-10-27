@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadits</title>
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <header class="p-2 home">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand fw-bolder fs-4 text-light " href="#"><i class="fa-solid fa-book-quran fa-beat text-light"></i> Naufal Hadits</a>
+
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success btn-my-hadist d-flex align-items-center justify-content-center btn-outline-light" type="submit">Bookmark<i class="fa-solid fa-bookmark fa-flip ms-1"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <h2 class="tengah1 text-center text-light">Cari Hadist Kamu Disini!</h2>
+        <h2 class="tengah text-center text-light">"Dunia ini bagaikan penjara bagi orang mukmin dan surga bagi orang kafir."</h2>
+    </header>
+
+
+    <section class="py-3 px-5 ">
+        <h2 class="mb-4 mt-4 text-dark">Hadist Pilihan</h2>
+        <div id="output" class="bawah"></div>
+    </section>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Payment Method</h3>
+            <div class="credit-cards">
+                <img src="assets/visa.png">
+                <img src="assets/master_card.png">
+                <img src="assets/paypal.png">
+            </div>
+            <p class="footer-copyright">2023 @ Naunaa26</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marked"></i>
+                <p><span>Indonesia</span>Tegal,Jawa Tengah</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+62812-1178-3201</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">bluenaufal7@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About</span>
+                Web Hadist adalah sebuah platform daring yang menyediakan akses mudah ke koleksi hadis-hadis dalam Islam. Dengan web ini, pengguna dapat dengan cepat mencari, membaca, dan memahami berbagai hadis yang berasal dari sumber-sumber terpercaya dalam agama Islam. Web Hadist memungkinkan umat Islam untuk mendalami ajaran-ajaran Nabi Muhammad SAW dan menerapkan mereka dalam kehidupan sehari-hari. Dengan berbagai fitur dan kemudahan navigasi, Web Hadist menjadi sumber referensi penting bagi mereka yang ingin memperdalam pengetahuan tentang ajaran Islam dan memperkaya pemahaman agama mereka.
+            </p>
+
+            <div class="footer-media">
+                <a href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js" integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+        getListHadist()
+    </script>
+</body>
+
+</html>
