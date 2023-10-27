@@ -8,7 +8,7 @@ function getListHadist() {
             <div class="card"><h2>${buku.name}</h2>
             <div class="    img-hadist"><img src="./assets/${buku.id}.jpg"/></div>
             <p>Jumlah Hadist : <b>${buku.available}</b></p>
-            <a class="btn btn-primary" href="/hadist/${buku.id}.html" target=_blank>Klik Disini</a>
+            <a class="btn btn-primary" href="./hadist/${buku.id}.html" target=_blank>Klik Disini</a>
             </div>`;
     }).join("");
 
